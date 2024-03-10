@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ar" dir="" >
 <head>
+<meta charset="utf-8" />
 <title></title>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.rtl.min.css" integrity="sha384-DOXMLfHhQkvFFp+rWTZwVlPVqdIhpDVYT9csOnHSgWQWPX0v5MCGtjCJbY6ERspU" crossorigin="anonymous">
@@ -16,21 +17,32 @@
     font-family: "Cairo Play", sans-serif;
     
     }
+    .modal-body {
+    direction:rtl;
+    
+    }
+    .modal-title{
+    
+    font-size:36px;
+    font-weight:bolder;
+    color:green;
+    }
+    
     
    
     </style>
 </head>
 <body>
-<header class="bg-secondary" >
+<header class="bg-warning" >
   <div class="container" >
   <div class="row p-3" >
   <div class="col-12 d-flex flex-row-reverse justify-content-between" >
   <h2 class="fw-bolder text-primary" >مركز الامير </h2>
-  <a href="contact-us.html" class="btn btn-warning btn-lg"  >استشارات مجانية</a>
+  <a href="contact-us.html" class="btn btn-primary btn-lg"  >استشارات مجانية</a>
   </div>
   
   </div>
-  <marquee direction="right"><p class="text-center fw-bold text-warning p-3" >العنوان الرئيسي : صنعاء (تقاطع شارع مأرب مع شارع الجامعة العربية)</p>
+  <marquee direction="right"><p class="text-center fw-bold text-danger p-3" >العنوان الرئيسي : صنعاء (تقاطع شارع مأرب مع شارع الجامعة العربية)</p>
   </marquee>
   </div>
   
@@ -66,35 +78,35 @@
     <a class="nav-link active btn btn-warning btn-lg text-danger p-2 " aria-current="page" href="index.html">القائمة الرئيسية</a>
     </li>
     <li class="nav-item ">
-    <a class="nav-link btn" href="#">من نحن</a>
+    <a class="nav-link btn" href="aboute.html">من نحن</a>
     </li>
     <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 الخدمات
     </a>
     <ul class="dropdown-menu dropdown-menu-md-end">
-    <li><a class="dropdown-item" href="" id="service1" >زراعة الأسنان</a></li>
-    <li><a class="dropdown-item" href="#">تصفية وتبييض الأسنان</a></li>
+    <li><a class="dropdown-item" href="" id="service1" data-bs-toggle="modal" data-bs-target="#staticBackdrop3" >زراعة الأسنان</a></li>
+    <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#staticBackdrop1" href="#">تصفية وتبييض الأسنان</a></li>
     
-    <li><a class="dropdown-item" href="#">حشوات تجميلية</a></li>
+    <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop5">حشوات تجميلية</a></li>
     
-    <li><a class="dropdown-item" href="#">علاج قنوات عصب الاسنان</a></li>
+    <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop4">علاج قنوات عصب الاسنان</a></li>
     
-    <li><a class="dropdown-item" href="#">اطقم متحركة</a></li>
+    <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop6">اطقم متحركة</a></li>
     
-    <li><a class="dropdown-item" href="#">علاج اللثة</a></li>
+    <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop7">علاج اللثة</a></li>
     
-    <li><a class="dropdown-item" href="#">علاج اضطرابات مفاصل الفك والوجهه</a></li>
+    <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop10">علاج اضطرابات مفاصل الفك والوجهه</a></li>
     
-    <li><a class="dropdown-item" href="#">البوتوكس</a></li>
+   <!-- <li><a class="dropdown-item" href="#">البوتوكس</a></li>-->
     
-    <li><a class="dropdown-item" href="#">ليزر الأسنان</a></li>
+    <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop8">ليزر الأسنان</a></li>
     
-    <li><a class="dropdown-item" href="#">جراحة الأسنان والفكين</a></li>
+    <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop9">جراحة الأسنان والفكين</a></li>
     
-    <li><a class="dropdown-item" href="#">تقاويم الأسنان</a></li>
+    <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop12">تقاويم الأسنان</a></li>
    
-    <li><a class="dropdown-item" href="#">طب اسنان الاطفال</a></li>
+    <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop13">طب اسنان الاطفال</a></li>
     <li>
     
     <hr class="dropdown-divider">
@@ -146,157 +158,1432 @@
     <img class="rounded-circle"  src="https://i0.wp.com/www.dryousefhawamdeh.com/wp-content/uploads/2021/06/teeth-whitening-1.jpg?fit=2400%2C1716&ssl=1" class="card-img-top" alt="...">
     <div class="card-body">
     <h4 class="card-title"> تصفية وتبييض الأسنان</h4>
-    <p><a class="btn btn-warning" href="#">عرض المزيد &raquo; </a></p>
+    
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">
+    فتح المقالة
+    </button>
+    
+    <!--start Modal -->
+    <div class="modal fade " style=""  id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-fullscreen">
+    <div class="modal-content">
+    <div class="modal-header d-flex justify-content-between">
+    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <h1 class="modal-title  m-auto" id="staticBackdropLabel">تصفية وتبييض الاسنان</h1>
+    
+    </div>
+    <!--start Modal body -->
+    <div class="modal-body">
+    
+    <!--start row top Modal (images) -->
+    <div class="row" >
+    
+    <div class="col-6" >
+    <div class="card" >
+    <img class=""  src="https://i0.wp.com/www.dryousefhawamdeh.com/wp-content/uploads/2021/06/teeth-whitening-2-1.jpg?fit=1402%2C1402&ssl=1"   class="card-img-top" alt="...">
+    
+    </div>
+    
+    
+    </div>
+    <div class="col-6" >
+    <div class="card" >
+    <img class=""  src="https://i0.wp.com/www.dryousefhawamdeh.com/wp-content/uploads/2021/06/teeth-whitening-3.jpg?fit=2560%2C1604&ssl=1"   class="card-img-top" alt="...">
+    
+    </div>
+    
+    
+    </div>
+    <div class="col" >
+    <div class="card" >
+    <img class=""  src="https://i0.wp.com/www.dryousefhawamdeh.com/wp-content/uploads/2021/06/teeth-whitening-4.jpg?fit=1500%2C1000&ssl=1"    class="card-img-top" alt="...">
+    
+    </div>
+    
+    
+    </div>
+    
+    </div>
+    <!--end row Modal (images)-->
+    <!--start row Modal(text) -->
+    <div class="row" >
+    
+    <div class="col-12" >
+    <div class="card p-2 m-2" >
+    <p>الابتسامة البيضاء تترك انطباعًا دائمًا جيدًا.
+    من خلال علاجاتنا الاحترافية لتبييض الأسنان هنا في عيادة الدكتور يوسف حوامدة للأسنان ، يمكننا تجديد ابتسامتك ونمنحك دفعة فورية من الثقة. من خلال تعزيز ابتسامة مرضانا من خلال تبييض الأسنان في العيادة وعلاجات تبييض الأسنان المنزلية.</p>
+    </div>
+    <div class="card p-2 m-2" >
+   
+   <p>تبييض الأسنان
+   يُعد تبييض الأسنان بتقنية زووم في العيادة أسهل العلاجات وأكثرها فاعلية والتي يمكنها تفتيح ابتسامتك حتى 6 إلى 8 درجات في غضون ساعتين.
+   ثبت سريريًا أنه آمن وفعال وسريع ويمكن أن يقدم نتائج تدوم لفترة أطول من الخيارات الأخرى.
+   نظرًا لأنه يتم إجراؤها من قبل أخصائي أسنان ، فإن مرضانا يتمتعون بجلسات تبييض مريحة بدون ألم أو حساسية</p>
+   </div>
+    <div class="card p-2 m-2" >
+    
+    <p>تبييض الاسنان في المنزل
+    يعد تبييض الأسنان في المنزل خيارًا رائعًا لمن يرغبون في الاستمتاع بابتسامة ناصعة وآمنة في منازلهم المريحة.
+    سنأخذ قياسات عن أسنانك لصنع قوالب التبييض المناسبة لك.
+    سنمنحك جل تبييض احترافي يوفر نتائج أفضل وأكثر أمانًا من المنتجات التي لا تستلزم وصفة طبية.
+    سيتعين عليك ارتداء القوالب مع الجل كما هو موصى به خلال ساعة واحدة كل يوم لمدة أسبوعين لرؤية أقصى قدر من النتائج</p>
+    </div>
+    
+    </div>
+    
+    </div>
+    <!--end row Modal (text)-->
+    
+    
+    </div>
+    <!--end Modal body-->
+    <!--start Modal footer -->
+    <div class="modal-footer m-auto">
+    <button type="button" class="btn btn-danger btn-lg" data-bs-dismiss="modal">Close</button>
+    </div>
+    
     </div>
     </div>
     </div>
+    <!--end Modal -->
+    
+    
+   </div>
+    </div>
+    </div>
+    <!--end col -->
+    
     <div class="col">
     <div class="card text-center shadow">
     <img class="rounded-circle"  src="https://i0.wp.com/www.dryousefhawamdeh.com/wp-content/uploads/2021/06/DENTAL-CROWNS-BRIDGES-2.jpg?fit=2000%2C1200&ssl=1" class="card-img-top" alt="...">
     <div class="card-body">
-    <h5 class="card-title">تيجان وجسور الأسنان</h4>
-    <p><a class="btn btn-warning" href="#">عرض المزيد &raquo; </a></p>
-    <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Toggle first element</a>
-    <div class="col">
-    <div class="collapse multi-collapse" id="multiCollapseExample1">
-    <div class="card card-body">
-    Some placeholder content for the first collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
+    <h4 class="card-title">تيجان وجسور الأسنان</h4>
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
+    فتح المقالة
+    </button>
+    
+    <!--start Modal -->
+    <div class="modal fade " style=""  id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-fullscreen">
+    <div class="modal-content">
+    <div class="modal-header d-flex justify-content-between">
+    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <h1 class="modal-title  m-auto" id="staticBackdropLabel">تيجان وجسور الاسنان</h1>
+    
+    </div>
+    <!--start Modal body -->
+    <div class="modal-body">
+    
+    <!--start row top Modal (images) -->
+    <div class="row" >
+    
+    <div class="col-6" >
+    <div class="card" >
+    <img class=""  src="https://i0.wp.com/www.dryousefhawamdeh.com/wp-content/uploads/2021/06/DENTAL-CROWNS-BRIDGES-1.jpg?fit=1000%2C839&ssl=1"   class="card-img-top" alt="...">
+    
+    </div>
+    
+    
+    </div>
+    <div class="col-6" >
+    <div class="card" >
+    <img class=""  src="https://i0.wp.com/www.dryousefhawamdeh.com/wp-content/uploads/2021/06/DENTAL-CROWNS-BRIDGES-4.jpg?fit=1200%2C675&ssl=1"   class="card-img-top" alt="...">
+    
+    </div>
+    
+    
+    </div>
+    <div class="col" >
+    <div class="card" >
+    <img class=""  src="https://i0.wp.com/www.dryousefhawamdeh.com/wp-content/uploads/2021/06/DENTAL-CROWNS-BRIDGES-3.jpg?fit=1200%2C800&ssl=1"    class="card-img-top" alt="...">
+    
+    </div>
+    
+    
+    </div>
+    
+    </div>
+    <!--end row Modal (images)-->
+    <!--start row Modal(text) -->
+    <div class="row" >
+    
+    <div class="col-12" >
+    <div class="card p-2 m-2" >
+    <p>لاستعادة شكل ووظيفة ابتسامتك، تيجان الأسنان علاج شائع جدًا لاستعادة جمالية ووظيفة الابتسامة. التاج عبارة عن “غطاء” مصنوع خصيصًا على شكل أسنان يتم وضعه بشكل دائم فوق سنك الطبيعي.
+    قد تضعف أسنانك بمرور الوقت ، وقد يوصي طبيب أسنانك بالتيجان لأسباب عديدة.
+    يمكن استخدامه لإعادة بناء وتقوية السن المعالج لبياً ، أو غطاء سن سيئ الشكل ، أو تغطية زراعة الأسنان.
+    غالبًا ما تستخدم التيجان أيضًا في تجميل الابتسامة ذات المظهر الطبيعي.</p>
+    </div>
+    <div class="card p-2 m-2" >
+    
+    <p>لماذا تحتاج تاج؟
+    ⁃ حماية الأسنان التي أضعفها التسوس.
+    ⁃ تقوية حشوة تالفة بشدة أو مكسورة.
+    ⁃ إعادة بناء الأسنان المكسورة أو المتضررة بشدة.
+    ⁃ تحسين جماليات الأسنان المتهالكة واللونية الشديدة.
+    ⁃ تغطية وحماية السن بعد معالجة قناة الجذر
+    ⁃ غطاء لزراعة الأسنان.</p>
+    </div>
+    <div class="card p-2 m-2" >
+    
+    <p>أنواع التيجان التي نقدمها.
+    ⁃ التيجان الخزفية بما في ذلك التيجان (Emax و Zirconia)
+    ⁃ تيجان البورسلين المنصهرة بالمعدن.
+    ⁃ التيجان الجزئية</p>
+    
+    <p>جسر الأسنان
+    يتكون جسر الأسنان من تاجين أو أكثر مثبتين على جانبي فجوة في الفم ، والتي تستخدم لاستبدال الأسنان المفقودة أو عدة أسنان. إنها قوية وموثوقة ومصممة لتظهر وتشعر تمامًا مثل أسنانك الطبيعية.</p>
+    
+    
+    </div>
+    
+    
+    
+    </div>
+    
+    </div>
+    <!--end row Modal (text)-->
+    
+    
+    </div>
+    <!--end Modal body-->
+    <!--start Modal footer -->
+    <div class="modal-footer m-auto">
+    <button type="button" class="btn btn-danger btn-lg" data-bs-dismiss="modal">Close</button>
+    </div>
+    
     </div>
     </div>
     </div>
+   
+    
     </div>
     </div>
     </div>
+    
+    
     <div class="col"  >
     <div class="card text-center shadow">
     <img class="rounded-circle"  src="https://i0.wp.com/www.dryousefhawamdeh.com/wp-content/uploads/2021/06/DENTAL-IMPLANTS-2.jpg?fit=2000%2C1250&ssl=1" class="card-img-top" alt="...">
     <div class="card-body">
     <h4 class="card-title" id="" >زراعة الاسنان</h4>
-     <p><a class="btn btn-warning" href="#service1">عرض المزيد &raquo;</a></p>
-     <!-- Button trigger modal -->
-     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-     Launch static backdrop modal
+      <!-- Button trigger modal -->
+     <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#staticBackdrop3">
+     فتح المقالة
      </button>
      
-     <!-- Modal -->
-     <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-     <div class="modal-dialog modal-dialog-scrollable">
+     <!--start Modal -->
+     <div class="modal fade " style=""  id="staticBackdrop3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+     <div class="modal-dialog modal-dialog-scrollable modal-fullscreen">
      <div class="modal-content">
      <div class="modal-header d-flex justify-content-between">
      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-     <h1 class="modal-title  fs-5" id="staticBackdropLabel">Modal title</h1>
+     <h1 class="modal-title  m-auto" id="staticBackdropLabel">زراعة الاسنان</h1>
      
      </div>
+     <!--start Modal body -->
      <div class="modal-body">
-     ...
+     
+     <!--start row top Modal (images) -->
+     <div class="row" >
+     
+     <div class="col-6" >
+     <div class="card" >
+     <img class=""  src="https://i0.wp.com/www.dryousefhawamdeh.com/wp-content/uploads/2021/06/DENTAL-IMPLANTS-3.jpg?fit=2281%2C1284&ssl=1"  class="card-img-top" alt="...">
+     
      </div>
-     <div class="modal-footer">
-     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-     <button type="button" class="btn btn-primary">Understood</button>
+     
+     
      </div>
+     <div class="col-6" >
+     <div class="card" >
+     <img class=""  src="https://i0.wp.com/www.dryousefhawamdeh.com/wp-content/uploads/2021/06/DENTAL-IMPLANTS-4.jpg?fit=1300%2C890&ssl=1"  class="card-img-top" alt="...">
+     
      </div>
+     
+     
      </div>
+     <div class="col" >
+     <div class="card" >
+     <img class=""  src="https://i0.wp.com/www.dryousefhawamdeh.com/wp-content/uploads/2021/06/DENTAL-IMPLANTS-1.jpg?fit=1000%2C800&ssl=1"   class="card-img-top" alt="...">
+     
+     </div>
+     
+     
      </div>
      
      </div>
+     <!--end row Modal (images)-->
+     <!--start row Modal(text) -->
+     <div class="row" >
+     
+     <div class="col-12" >
+     <div class="card p-2 m-2" >
+     <p class="" >تعتبر زراعة الأسنان الآن العلاج المفضل لاستبدال الأسنان على أطقم الأسنان الجزئية والجسور الثابتة. العلاجات التقليدية إما ترتكز على لثتك ، كما هو الحال مع أطقم الأسنان القابلة للإزالة ، أو تعتمد على الأسنان المجاورة لتعمل كمثبتات للجسور الثابتة. يتم وضع زرعات الأسنان في عظام الفك ، مما يوفر خيار استبدال ناجح للغاية وطويل الأمد.</p>
+     
+     </div>
+     <div class="card p-2 m-2" >
+     <p>فقدان الأسنان وزراعتها.
+     
+     يتوفر في طب الأسنان الآن بدائل للطرق التقليدية لاستبدال الأسنان: أطقم الأسنان والجسور الثابتة ، والتي ترتبط بمضاعفات متزايدة بمرور الوقت.
+     
+     تسبب أطقم الأسنان المتحركة فقدان العظام مما يؤثر على بنية الوجه ويمكن أن يؤدي إلى تغيير ملاءمة طقم الأسنان للفك. قد تصدر أطقم الأسنان المتحركة أصوات نقر محرجة عند تناول الطعام أو التحدث. يتم وضع الجسور الثابتة عن طريق طحن الأسنان المجاورة المتبقية ، والمعروفة أيضًا باسم الدعامات ، مما يجعل هذه الأسنان السليمة أكثر عرضة للتلف. على الرغم من المضاعفات طويلة المدى ، لا تزال هذه العلاجات آمنة وقابلة للتطبيق</p>
+     </div>
+     <div class="card p-2 m-2" >
+     <p>تشير الأبحاث إلى أن زراعة الأسنان تؤدي إلى نتائج أفضل على المدى الطويل لاستبدال الأسنان. يتم وضع زرعات التيتانيوم جراحيًا في عظم الفك ، حيث تندمج الزرعة مع العظم الطبيعي الموجود في عملية تسمى الاندماج العظمي. لا تتحرك الزرعات أو تصدر ضوضاء محرجة ويصعب تمييزها عن أسنانك الطبيعية. نظرًا لأنها تعكس بنية الأسنان والجذور ، فإن الزرعات توفر تحفيزًا لعظم الفك ، مما يمنع فقدان العظام.
+     تساهم هذه العوامل في نجاح زراعة الأسنان على المدى الطويل وصحة الفم العامة اللاحقة</p>
+     </div>
+     
+     
+     
+     </div>
+     
+     </div>
+     <!--end row Modal (text)-->
+     
+     
+     </div>
+     <!--end Modal body-->
+     <!--start Modal footer -->
+     <div class="modal-footer m-auto">
+     <button type="button" class="btn btn-danger btn-lg" data-bs-dismiss="modal">Close</button>
+     </div>
+     
+     </div>
+     </div>
+     </div>
+     <!--end Modal -->
+     </div>
     </div>
     </div>
+    <!--end card -->
+    
     <div class="col">
     <div class="card text-center shadow">
     <img class="rounded-circle" src="https://i0.wp.com/www.dryousefhawamdeh.com/wp-content/uploads/2021/06/root-canal-5.jpeg?fit=500%2C354&ssl=1" class="card-img-top" alt="...">
     <div class="card-body">
     <h4 class="card-title">علاج قنوات العصب</h4>
-    <p><a class="btn btn-warning" href="#">عرض المزيد &raquo;</a></p>
+    
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#staticBackdrop4">
+    فتح المقالة
+    </button>
+    
+    <!--start Modal -->
+    <div class="modal fade " style=""  id="staticBackdrop4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-fullscreen">
+    <div class="modal-content">
+    <div class="modal-header d-flex justify-content-between">
+    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <h1 class="modal-title  m-auto" id="staticBackdropLabel">علاج قنوات العصب</h1>
+    
+    </div>
+    <!--start Modal body -->
+    <div class="modal-body">
+    
+    <!--start row top Modal (images) -->
+    <div class="row" >
+    
+    <div class="col-6" >
+    <div class="card" >
+    <img class=""  src="https://i0.wp.com/www.dryousefhawamdeh.com/wp-content/uploads/2021/06/root-canal-2.jpeg?fit=599%2C458&ssl=1"   class="card-img-top" alt="...">
+    
+    </div>
+    
+    
+    </div>
+    <div class="col-6" >
+    <div class="card" >
+    <img class=""  src="https://i0.wp.com/www.dryousefhawamdeh.com/wp-content/uploads/2021/06/root-canal-4.jpeg?fit=1024%2C682&ssl=1"   class="card-img-top" alt="...">
+    
+    </div>
+    
+    
+    </div>
+    <div class="col" >
+    <div class="card" >
+    <img class=""  src="https://i0.wp.com/www.dryousefhawamdeh.com/wp-content/uploads/2021/06/root-canal-3.jpeg?fit=512%2C288&ssl=1"    class="card-img-top" alt="...">
+    
+    </div>
+    
+    
+    </div>
+    
+    </div>
+    <!--end row Modal (images)-->
+    <!--start row Modal(text) -->
+    <div class="row" >
+    
+    <div class="col-12" >
+    <div class="card p-2 m-2" >
+    
+    <p>علاج قنوات العصب هي منطقة متخصصة في طب الأسنان تركز على علاج التهاب لب الأسنان ، وهذا يُعرف أيضًا باسم علاج قناة الجذر.
+    
+    يوجد داخل كل سن تحت المينا البيضاء طبقة صلبة تسمى العاج. داخل العاج هنالك نسيج يسمى اللب. اللب هو نسيج حي ويتكون من أوعية دموية وأعصاب.</p>
+    </div>
+    <div class="card p-2 m-2" >
+    
+    <p>يمكن أن يسبب التهاب العصب مشاكل للأسنان ولكن أيضًا في عظام الفك.
+    يُعرف إجراء التشخيص والعلاج هذه المشاكل باسم علاج جذور الأسنان.
+    
+    إذا أصبح اللب ملتهبًا أو مصابًا ، فقد يؤدي ذلك إلى ألم شديد أو حتى خراج. ترتبط قنوات الجذر وفتحات نهاية الجذر مع عظم الفك. نتيجة لذلك ، يمكن أن تنتشر عدوى لب الأسنان إلى هذه المنطقة. إذا أصيب لب الأسنان ، فأنت بحاجة إلى الخضوع لعلاج قناة الجذر.
+    
+    علاج قناة الجذر هو إجراء معقد للغاية. في عيادة الدكتور يوسف حوامدة لطب الأسنان ، لدينا خبرة كبيرة في إجراء علاجات قناة الجذر.</p>
+    
+    </div>
+    <div class="card p-2 m-2" >
+     
+     <p>أعراض
+     غالبًا ما تكون الأعراض التي يصاب بها لب الأسنان واضحة جدًا:
+     
+     ⁃ ألم شديد عند تناول المشروبات الساخنة أو الباردة.
+     
+     ⁃ ألم دائم يبقيك مستيقظًا في الليل.
+     
+     ⁃ ألم عند تناول الطعام.
+     
+     من الجيد أن تدرك أنه ليست كل عدوى لب الأسنان تسبب الألم. في بعض الأحيان لا توجد أعراض ولا يتم اكتشاف العدوى إلا عند إجراء الأشعة السينية على أسنانك أو بعد إجراء الاختبارات السريرية.</p>
+     
+     </div>
+    
+    <div class="card p-2 m-3" >
+    
+    <p>معالجة قناة الجذر
+    تتم عملية معالجة قناة الجذر على النحو التالي:
+    ⁃ يقوم طبيب الأسنان بعمل أشعة سينيه لقنوات الجذر لتحديد مكان الإصابة.
+    ⁃ يتم إعطاء مخدر موضعي ويقوم طبيب الأسنان / أخصائي اللبية بعمل فتحة في تاج السن.
+    ⁃ يقوم طبيب الأسنان بإزالة الأنسجة المصابة أو الميتة.
+    ⁃ تستخدم أدوات دقيقة جدًا لتنظيف الجزء الداخلي من السن أو الضرس جنبًا إلى جنب مع سائل مطهر.
+    ⁃ تملىء المساحة التي تم إنشاؤها في السن أو الضرس في قنوات الجذر بمادة شبيهة بالمطاط ومن ثم حشوة دائمة، إذا تم إضعاف السن بشكل خطير ، يمكن استخدام التاج لحماية السن بدلاً من الحشوات المعتادة.
+    
+    العلاج غير مؤلم تقريبًا بسبب استخدام التخدير الموضعي. من الممكن أن تشعر ببعض الألم بعد العلاج. إذا كان هذا هو الحال فإننا نوصي باستخدام المسكنات التي توصف من قبل الطبيب مثل الباراسيتامول أو الإيبوبروفين.
+    
+    إعادة المعالجة للعصب.
+    في بعض الحالات الاستثنائية ، قد يكون من الممكن بعد علاج قناة الجذر استمرار الألم وذلك لأن الالتهاب لم يتم علاجه بشكل صحيح من قبل دكتور آخر .
+    في العلاج الجديد ، سيتم تنظيف جميع القنوات الجذرية وملؤها مرة أخرى. أثناء العلاج ، سيقوم طبيب الأسنان بعمل أشعة سينية للتحكم في مسار العلاج.</p>
+    
+    </div>
+    
+    
+    </div>
+    
+    </div>
+    <!--end row Modal (text)-->
+    
+    
+    </div>
+    <!--end Modal body-->
+    <!--start Modal footer -->
+    <div class="modal-footer m-auto">
+    <button type="button" class="btn btn-danger btn-lg" data-bs-dismiss="modal">Close</button>
+    </div>
+    
     </div>
     </div>
     </div>
+    <!--end Modal -->
+    </div>
+    </div>
+    </div>
+    <!--end col -->
+    
     <div class="col">
     <div class="card text-center shadow">
     <img class="rounded-circle" src="https://i0.wp.com/www.dryousefhawamdeh.com/wp-content/uploads/2021/06/COMPOSITE-RESTARATION-1.jpg?fit=1000%2C800&ssl=1" class="card-img-top" alt="...">
     <div class="card-body">
     <h4 class="card-title text-center">الحشوات التجميلية</h4>
-     <p><a class="btn btn-warning" href="#">عرض المزيد &raquo; </a></p>
+     
+     <!-- Button trigger modal -->
+     <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#staticBackdrop5">
+     فتح المقالة
+     </button>
+     
+     <!--start Modal -->
+     <div class="modal fade " style=""  id="staticBackdrop5" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+     <div class="modal-dialog modal-dialog-scrollable modal-fullscreen">
+     <div class="modal-content">
+     <div class="modal-header d-flex justify-content-between">
+     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+     <h1 class="modal-title  m-auto" id="staticBackdropLabel">الحشوات التجميلية</h1>
+     
+     </div>
+     <!--start Modal body -->
+     <div class="modal-body">
+     
+     <!--start row top Modal (images) -->
+     <div class="row" >
+     
+     <div class="col-6" >
+     <div class="card" >
+     <img class=""  src="https://i0.wp.com/www.dryousefhawamdeh.com/wp-content/uploads/2021/06/COMPOSITE-RESTARATION-1.png?fit=1280%2C720&ssl=1"   class="card-img-top" alt="...">
+     
+     </div>
+     
+     
+     </div>
+     <div class="col-6" >
+     <div class="card" >
+     <img class=""  src="https://i0.wp.com/www.dryousefhawamdeh.com/wp-content/uploads/2021/06/COMPOSITE-RESTARATION-1.jpg?fit=1000%2C800&ssl=1"   class="card-img-top" alt="...">
+     
+     </div>
+     
+     
+     </div>
+     <div class="col" >
+     <div class="card" >
+     <img class=""  src="https://i0.wp.com/www.dryousefhawamdeh.com/wp-content/uploads/2021/06/COMPOSITE-RESTARATION-3.jpg?fit=2048%2C1536&ssl=1"    class="card-img-top" alt="...">
+     
+     </div>
+     
+     
+     </div>
+     
+     </div>
+     <!--end row Modal (images)-->
+     <!--start row Modal(text) -->
+     <div class="row" >
+     
+     <div class="col-12" >
+     <div class="card p-2 m-2" >
+     
+     <p>الحشوات التجميلية هي الطريقة الأسهل والأكثر توافقًا حيويًا والأقل تدخلاً لإصلاح الأسنان المتسوسة أو المكسورة ، واستعادة الصحة والوظيفة مع الحفاظ على المظهر الجمالي للغاية.
+     
+     الحشوات التجميلية عبارة عن حشوات بلون الأسنان تتكون من معادن زجاجية وبلاستيكية صلبة يستخدمها أطباء الأسنان لعلاج التسوسات العميقة وتغطية التجاويف وحتى إصلاح الأسنان التالفة بشدة.
+     
+     تعتبر هذه الحشوات واعدة حيث يمكن استخدامها كبديل أقل توغلًا للتيجان التقليدية وحشوات الفضة ، والتي تتطلب تحضيرًا أكثر شمولاً للأسنان ، ويمكن أيضًا استخدامها لإجراء تحسينات جمالية على الأسنان.
+     
+     لا يمكن أن تعوض حشوات الأسنان فقدان الأسنان بالكامل ، لكنها تستخدم لتحل محل بنية الأسنان التي دمرها تسوس الأسنان.
+     
+     يساعد تنظيف أسنانك مرتين يوميًا وتناول نظام غذائي متنوع غني بالعناصر الغذائية على تقليل فقدان الأسنان والحاجة إلى الحشوات.
+     
+     ستساعد فحوصات الأسنان على ضمان اكتشاف أي حالات ومعالجتها في أسرع وقت ممكن.</p>
+     
+     </div>
+     <div class="card p-2 m-2" >
+     
+     <p>الحشوات التجميلة.
+     الحشوه عبارة عن طلاء بلون الأسنان يضعه طبيب الأسنان على أسطح وجه الأسنان لتصحيح محاذاة الأسنان غير المنتظمة ، وتآكل المينا ، وتغير اللون أو التباعد ، والرقائق أو الشقوق.
+     
+     علاج الحشوات التجميلية للأسنان الأمامية.
+     يمكن إتمام عملية تركيب الحشوات التجميلية في يوم واحد.
+     يتم اختيار لون الحشوات أولاً. بعد ذلك ، يمكن إضافة فيلم لاصق للأسنان بحيث يمكن تركيب الحشوة بنجاح. ثم يتم استخدام ضوء خاص لتقوية الأسطح.
+     الخطوة الأخيرة هي تشكيل الواجهات بالشكل الصحيح. ستعجب على الفور بابتسامتك المتألقة الجديدة بعد العملية.
+     
+     مواجهة التنظيف والرعاية اللاحقة:
+     على الرغم من أن الأسطح تبدو مثل أسنانك الطبيعية ، إلا أنك ستحتاج إلى التعود عليها في الأيام القليلة الأولى من الجراحة. إذا كان شكل الأسنان قد تغير بشكل كبير ، فهذا هو الحال على الأرجح. سيؤدي ذلك إلى مشاكل عابرة في الكلام عندما يتكيف فمك مع الشكل المختلف لأسنانك مع الأسطح.
+     بالمقارنة مع الأسنان الطبيعية ، لا تحتاج الحشوات التجميلية إلى أي عناية خاصة. نظف أسنانك مرتين في اليوم على الأقل ، بقدر ما يمكنك الحصول على أسنان حقيقية. للحفاظ على نظافة أسنانك ، استخدم خيط تنظيف الأسنان أو دبابيس أو فرش ما بين الأسنان.</p>
+     
+     </div>
+     <div class="card p-2 m-2" >
+      
+      <p>فوائد الحشوات التجميلية:
+      ⁃ على عكس الواجهات الخزفية ، فهي غير مكلفة نسبيًا.
+      ⁃ خلال زيارة واحدة.
+      
+      عواقب الحشوات التجميلية:
+      ⁃ يحدث تغير اللون بسرعة أكبر من البورسلين.
+      ⁃ عمر أقصر مقارنة بالواجهات الخزفية.
+      
+      القشرة المركبة
+      
+      ما هي القشرة المركبة؟
+      إذا كنت ترغب دائمًا في تحسين ابتسامتك ، فقد تكون قشور الأسنان خيارًا جيدًا لك.
+      قشور الأسنان عبارة عن قشور رقيقة تلائم الجزء الأمامي من أسنانك الحالية لتحسين مظهرها. تعتبر قشور الأسنان واحدة من عدة طرق لتغيير مظهر أسنانك.
+      
+      هناك نوعان رئيسيان من القشرة: البورسلين والحشوة التجميلية. كما تتوقع من الاسم ، قشرة البورسلين مصنوعة خصيصًا من البورسلين لتناسب أسنانك. غالبًا ما تُصنع قشرة الحشوة التجميلية من طلاء بلون الأسنان ، وهو نفس النوع من المواد المستخدمة في علاج تسوسات الأسنان.
+      
+      هناك إيجابيات وسلبيات لكلا النوعين من القشرة ، لذلك من المهم مراعاة مستوى المشكلة التي تأمل في حلها باستخدام القشرة ، فضلاً عن ميزانيتك.</p>
+      
+      </div>
+      
+      <div class="card p-2 m-2" >
+      
+      <p>هناك نوعان من قشرة الحشوة التجميلية.
+      القشرة المباشرة هي قشرة مصنوعة من مادة مركبة يتم وضعها مباشرة على أسنانك.
+      لا يستغرق طبيب الأسنان وقتًا طويلاً لإعداد أسنانك لتطبيق الفينير ، وتعتبر عملية التطبيق سهلة.
+      
+      القشرة الغير المباشرة
+      يتمثل الاختلاف الرئيسي بين القشرة المركبة المباشرة وغير المباشرة في عملية التطبيق – وليس المادة الفعلية المستخدمة.
+      تم تجهيز أسنانك كما هو الحال مع القشرة المركبة المباشرة ، ولكن القشرة مصنوعة خصيصًا “بشكل غير مباشر” خارج الفم في عيادة طبيب الأسنان أو في معمل الأسنان.
+      
+      سوف تتلقى مجموعة من القشرة المؤقتة حتى يتم صنع القشرة غير المباشرة. في الموعد التالي ، يتم وضع القشرة المركبة غير المباشرة على أسنانك بطبقة من اللاصق.
+      
+      يمكن أن تتحمل القشرة المركبة غير المباشرة المزيد من التآكل ومقاومة الكسور بشكل أفضل من القشرة التجميلية المباشرة. تميل إلى أن تكلف أكثر من القشرة المركبة المباشرة</p>
+      </div>
+     
+     
+     
+     </div>
+     
+     </div>
+     <!--end row Modal (text)-->
+     
+     
+     </div>
+     <!--end Modal body-->
+     <!--start Modal footer -->
+     <div class="modal-footer m-auto">
+     <button type="button" class="btn btn-danger btn-lg" data-bs-dismiss="modal">Close</button>
+     </div>
+     
+     </div>
+     </div>
+     </div>
+     <!--end Modal -->
+     
      </div>
     </div>
     </div>
+    <!--end col -->
+    
     <div class="col">
     <div class="card text-center shadow">
     <img class="rounded-circle" src="https://i0.wp.com/www.dryousefhawamdeh.com/wp-content/uploads/2021/06/DENTURES-3.jpg?fit=1600%2C1200&ssl=1" class="card-img-top" alt="...">
     <div class="card-body">
     <h4 class="card-title text-center">اطقم الاسنان المتحركة</h4>
     
-    <p><a class="btn btn-warning" href="#"> عرض المزيد &raquo; </a></p>
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#staticBackdrop6">
+    فتح المقالة
+    </button>
+    
+    <!--start Modal -->
+    <div class="modal fade " style=""  id="staticBackdrop6" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-fullscreen">
+    <div class="modal-content">
+    <div class="modal-header d-flex justify-content-between">
+    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <h1 class="modal-title  m-auto" id="staticBackdropLabel">أطقم الاسنان المتحركة</h1>
+    
+    </div>
+    <!--start Modal body -->
+    <div class="modal-body">
+    
+    <!--start row top Modal (images) -->
+    <div class="row" >
+    
+    <div class="col-6" >
+    <div class="card" >
+    <img class=""  src="https://i0.wp.com/www.dryousefhawamdeh.com/wp-content/uploads/2021/06/DENTURES-1.jpg?fit=900%2C600&ssl=1"   class="card-img-top" alt="...">
+    
+    </div>
+    
+    
+    </div>
+    <div class="col-6" >
+    <div class="card" >
+    <img class=""  src="https://i0.wp.com/www.dryousefhawamdeh.com/wp-content/uploads/2021/06/DENTURES-4-scaled.jpg?fit=2560%2C1707&ssl=1"   class="card-img-top" alt="...">
+    
+    </div>
+    
+    
+    </div>
+    <div class="col" >
+    <div class="card" >
+    <img class=""  src="https://i0.wp.com/www.dryousefhawamdeh.com/wp-content/uploads/2021/06/DENTURES-2.jpg?fit=900%2C487&ssl=1"    class="card-img-top" alt="...">
+    
+    </div>
+    
+    
+    </div>
+    
+    </div>
+    <!--end row Modal (images)-->
+    <!--start row Modal(text) -->
+    <div class="row" >
+    
+    <div class="col-12" >
+    <div class="card p-2 m-2" >
+    
+    <p>تقدم عيادتنا مجموعة متنوعة من خدمات أطقم الأسنان مصممة لتضمن لك راحة وسعادة بابتسامتك.
+    عيادة الدكتور يوسف لطب الأسنان لديها التقنيات اللازمة لصنع أفضل أطقم الأسنان من أجلك.
+    
+    تمنحك جودة منتجاتنا المصنعة من هارد أكريليك والمواد المعدنية ابتسامة نضرة</p>
+    
+    </div>
+    <div class="card p-2 m-2" >
+    
+    <p>فوائد أطقم الأسنان:
+    
+    ⁃ تقلل من التوتو المجتمعي وقلقك بشأن الابتسامة أمام الناس.
+    ⁃ القدرة على تناول المزيد من الأطعمة.
+    ⁃ التحدث بثقة أكبر.
+    ⁃ يحافظ على عضلات الوجه من الترهل.
+    ⁃ احتفظ بتوتر عضلات وجهك وفكك ورقبتك
+    ⁃ عش حياتك بأكملها!</p>
+    
+    </div>
+    <div class="card p-2 m-2" >
+     </div>
+    
+    
+    
+    </div>
+    
+    </div>
+    <!--end row Modal (text)-->
+    
+    
+    </div>
+    <!--end Modal body-->
+    <!--start Modal footer -->
+    <div class="modal-footer m-auto">
+    <button type="button" class="btn btn-danger btn-lg" data-bs-dismiss="modal">Close</button>
+    </div>
+    
     </div>
     </div>
     </div>
+    <!--end Modal -->
+    </div>
+    </div>
+    </div>
+    
     <div class="col">
     <div class="card text-center shadow">
     <img class="rounded-circle"  src="https://i0.wp.com/www.dryousefhawamdeh.com/wp-content/uploads/2021/06/gum-treatment-3.jpg?fit=800%2C800&ssl=1" class="card-img-top" alt="...">
     <div class="card-body">
     <h4 class="card-title">علاج اللثة</h4>
-    <p><a class="btn btn-warning" href="#">عرض المزيد &raquo; </a></p>
+    
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#staticBackdrop7">
+    فتح المقالة
+    </button>
+    
+    <!--start Modal -->
+    <div class="modal fade " style=""  id="staticBackdrop7" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-fullscreen">
+    <div class="modal-content">
+    <div class="modal-header d-flex justify-content-between">
+    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <h1 class="modal-title  m-auto" id="staticBackdropLabel">علاج اللثة</h1>
+    
+    </div>
+    <!--start Modal body -->
+    <div class="modal-body">
+    
+    <!--start row top Modal (images) -->
+    <div class="row" >
+    
+    <div class="col-6" >
+    <div class="card" >
+    <img class=""  src="https://i0.wp.com/www.dryousefhawamdeh.com/wp-content/uploads/2021/06/gum-treatment-3.jpg?fit=800%2C800&ssl=1"   class="card-img-top" alt="...">
+    
+    </div>
+    
+    
+    </div>
+    <div class="col-6" >
+    <div class="card" >
+    <img class=""  src="https://i0.wp.com/www.dryousefhawamdeh.com/wp-content/uploads/2021/06/gum-treatment-1-1.jpg?fit=2560%2C1709&ssl=1"   class="card-img-top" alt="...">
+    
+    </div>
+    
+    
+    </div>
+    <div class="col" >
+    <div class="card" >
+    <img class=""  src="https://i0.wp.com/www.dryousefhawamdeh.com/wp-content/uploads/2021/06/gum-treatment-4.jpg?fit=2000%2C750&ssl=1"    class="card-img-top" alt="...">
+    
+    </div>
+    
+    
+    </div>
+    
+    </div>
+    <!--end row Modal (images)-->
+    <!--start row Modal(text) -->
+    <div class="row" >
+    
+    <div class="col-12" >
+    <div class="card p-2 m-2" >
+    
+    <p>تسبب أمراض اللثة التهابات في اللثة وفقدان ارتباط الأسنان الصحي باللثة وعظام الفك.
+    أفضل علاج هو الوقاية من حدوث الالتهاب ، وإذا تم اكتشافه مبكرًا ، فقد تكون تدابير التنظيف البسيطة هي كل ما هو مطلوب لاستعادة السيطرة.
+    
+    تعتبر أمراض اللثة ، إذا لم يتم علاجها ، سببًا رئيسيًا لفقدان الأسنان</p>
+    
+    </div>
+    <div class="card p-2 m-2" >
+    
+    <p>طرق علاج اللثه؟
+    ⁃ تنظيف اللثه والأسنان وتلميعها.
+    ⁃ الجراحة التصحيحة لعلاج انحسار اللثة.
+    
+    علامات وأعراض أمراض اللثة
+    
+    ⁃ احمرار اللثة.
+    ⁃ نزيف اللثة بعد تنظيف الأسنان بالفرشاة.
+    ⁃ رائحة الفم الكريهة.
+    ⁃ الأسنان المتحركه.
+    ⁃ خراج في اللثة.
+    ⁃ انحسار اللثة.</p>
+    
+    </div>
+    <div class="card p-2 m-2" >
+     
+     <p>ما هو سبب امراض اللثة؟
+     تتحد البكتيريا واللعاب في فمك لتشكيل طبقة لزجة تعرف باسم البلاك. إذا لم يتم تنظيف هذا بكفاءة كل يوم ، فإنه يتراكم على أسنانك ويمكن أن يؤدي إلى التهاب وتسوس.</p>
+     
+     </div>
+    
+    
+    
+    </div>
+    
+    </div>
+    <!--end row Modal (text)-->
+    
+    
+    </div>
+    <!--end Modal body-->
+    <!--start Modal footer -->
+    <div class="modal-footer m-auto">
+    <button type="button" class="btn btn-danger btn-lg" data-bs-dismiss="modal">Close</button>
+    </div>
+    
     </div>
     </div>
     </div>
+    <!--end Modal -->
+    
+    
+    </div>
+    </div>
+    </div>
+    <!--end col -->
+    
     <div class="col">
     <div class="card text-center shadow">
     <img class="rounded-circle"  src="https://i0.wp.com/www.dryousefhawamdeh.com/wp-content/uploads/2021/06/DENTAL-LASER-1.jpg?fit=1024%2C712&ssl=1" class="card-img-top" alt="...">
     <div class="card-body">
     <h4 class="card-title">ليزر الأسنان</h4>
-    <p><a class="btn btn-warning" href="#">عرض المزيد &raquo; </a></p>
+    
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#staticBackdrop8">
+    فتح المقالة
+    </button>
+    
+    <!--start Modal -->
+    <div class="modal fade " style=""  id="staticBackdrop8" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-fullscreen">
+    <div class="modal-content">
+    <div class="modal-header d-flex justify-content-between">
+    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <h1 class="modal-title  m-auto" id="staticBackdropLabel">ليزر الاسنان</h1>
+    
+    </div>
+    <!--start Modal body -->
+    <div class="modal-body">
+    
+    <!--start row top Modal (images) -->
+    <div class="row" >
+    
+    <div class="col-6" >
+    <div class="card" >
+    <img class=""  src="https://i0.wp.com/www.dryousefhawamdeh.com/wp-content/uploads/2021/06/DENTAL-LASER-1.jpg?fit=1024%2C712&ssl=1"   class="card-img-top" alt="...">
+    
+    </div>
+    
+    
+    </div>
+    <div class="col-6" >
+    <div class="card" >
+    <img class=""  src="https://i0.wp.com/www.dryousefhawamdeh.com/wp-content/uploads/2021/06/DENTAL-LASER-3.jpg?fit=1280%2C720&ssl=1"   class="card-img-top" alt="...">
+    
+    </div>
+    
+    
+    </div>
+    <div class="col" >
+    <div class="card" >
+    <img class=""  src="https://i0.wp.com/www.dryousefhawamdeh.com/wp-content/uploads/2021/06/DENTAL-LASER-1.png?fit=500%2C280&ssl=1"    class="card-img-top" alt="...">
+    
+    </div>
+    
+    
+    </div>
+    
+    </div>
+    <!--end row Modal (images)-->
+    <!--start row Modal(text) -->
+    <div class="row" >
+    
+    <div class="col-12" >
+    <div class="card p-2 m-2" >
+    
+    <p>يتم استخدام الليزر في طب الأسنان لعلاج مجموعة واسعة من الحالات. يختلف هذا الليزر عن الليزر البارد المستخدم في العلاج بالضوء للصداع والألم وتسكين الالتهابات.
+    
+    تُعد إجراءات علاج الأنسجة الصلبة والأنسجة الرخوة النوعين الأكثر شيوعًا من علاجات طب الأسنان بالليزر. تعتبر اللثة من الأنسجة الرخوة،
+    ويستخدم الليزر لإعادة تشكيل اللثة وقتل البكتيريا. يمكن أيضاً إزالة جزء صغير من الأنسجة (الخزعة) بالليزر واختباره للكشف عن السرطان. كما تعالج القرحة بالليزر لإزالة الآفات الموجودة في الفم وتخفيف الانزعاج ، كما تساعد على تخفيف ضغط الفك والصداع الذي يصاحبها.
+    
+    يستخدم الليزر أيضاً لتسريع عملية تبييض الأسنان في مكان العمل. “تنشط” طاقة الليزر محلول التبييض البيروكسيد المضاف إلى سطح الأسنان ، مما يسرع عملية التبييض.</p>
+    
+    </div>
+    <div class="card p-2 m-2" >
+    
+    <p>كيف يعمل الليزر في طب الأسنان؟
+    يستعمل الليزر الطاقة على شكل ضوء ، وهذه هي الطريقة التي يعمل بها. يعمل الليزر كأداة قطع للأنسجة عند استخدامه للإجراءات الجراحية وطب الأسنان. يعمل الليزر كمصدر للحرارة ويزيد من تأثير عوامل تبييض الأسنان عند استخدامه في إجراءات تبييض الأسنان</p>
+    
+    </div>
+    <div class="card p-2 m-2" >
+    
+    <p>فوائد الليزر في عمليات الأسنان.
+    ⁃ يلغي الليزر نظريًا الحاجة إلى الغرز.
+    ⁃ ولأن الليزر يحفز تخثر الدم ، فإن نزيف الأنسجة الرخوة المعالجة يقل.
+    ⁃ قد يكون التخدير ليس ضروريًا لإجراءات معينة.
+    ⁃ نظرًا لأن الليزر يعقم البيئة ، يقل خطر الإصابة بالعدوى البكتيرية.
+    ⁃ تلتئم الجروح بشكل أسرع ، ويمكن ان يحدث تجديد للأنسجة.
+    ⁃ من الممكن أن تسبب العلاجات ضررًا أقل للأنسجة الأساسية.
+    ⁃
+    الدكتور يوسف حوامدة طبيب أسنان متدرب بالليزر وقد أكمل الدورات التعليمية وحصل على المؤهلات المطلوبة عن طريق كلية طب الأسنان وجمعيات طب الأسنان.</p>
+    
+    </div>
+    
+    
+    
+    </div>
+    
+    </div>
+    <!--end row Modal (text)-->
+    
+    
+    </div>
+    <!--end Modal body-->
+    <!--start Modal footer -->
+    <div class="modal-footer m-auto">
+    <button type="button" class="btn btn-danger btn-lg" data-bs-dismiss="modal">Close</button>
+    </div>
+    
     </div>
     </div>
     </div>
+    <!--end Modal -->
+    
+    </div>
+    </div>
+    </div>
+    <!--end col-->
+    
     <div class="col">
     <div class="card text-center shadow">
     <img class="rounded-circle"  src="https://www.dryousefhawamdeh.com/wp-content/uploads/2021/06/7-Tooth-Extractions-Bone-Preservation-1.jpg" class="card-img-top" alt="...">
     <div class="card-body">
     <h4 class="card-title">جراحة الأسنان والفكين</h4>
-    <p><a class="btn btn-warning" href="#">عرض المزيد &raquo; </a></p>
+    
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#staticBackdrop9">
+    فتح المقالة
+    </button>
+    
+    <!--start Modal -->
+    <div class="modal fade " style=""  id="staticBackdrop9" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-fullscreen">
+    <div class="modal-content">
+    <div class="modal-header d-flex justify-content-between">
+    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <h1 class="modal-title  m-auto" id="staticBackdropLabel">جراحة الاسنان والفكين</h1>
+    
+    </div>
+    <!--start Modal body -->
+    <div class="modal-body">
+    
+    <!--start row top Modal (images) -->
+    <div class="row" >
+    
+    <div class="col-6" >
+    <div class="card" >
+    <img class=""  src="https://www.dryousefhawamdeh.com/wp-content/uploads/2021/06/tooth-extractions.jpg"   class="card-img-top" alt="...">
+    
+    </div>
+    
+    
+    </div>
+    <div class="col-6" >
+    <div class="card" >
+    <img class=""  src="https://www.dryousefhawamdeh.com/wp-content/uploads/2021/06/Tooth-Extraction-and-Post-Recovery.jpg"   class="card-img-top" alt="...">
+    
+    </div>
+    
+    
+    </div>
+    <div class="col" >
+    <div class="card" >
+    <img class=""  src="https://www.dryousefhawamdeh.com/wp-content/uploads/2021/06/photo-service-oralsurgery-1024x502.jpg"    class="card-img-top" alt="...">
+    
+    </div>
+    
+    
+    </div>
+    
+    </div>
+    <!--end row Modal (images)-->
+    <!--start row Modal(text) -->
+    <div class="row" >
+    
+    <div class="col-12" >
+    <div class="card p-2 m-2" >
+    
+    <p>مركز الامير لطب الفم والاسنان مجهزة بالكامل لتلبية كل احتياجات الأسنان. هذا يعني أنه يمكنك الوثوق بنا في الرعاية الكاملة للأسنان.
+    أهمية التنظيف المستمر والفحص الدوري.</p>
+    
+    </div>
+    <div class="card p-2 m-2" >
+    
+    <p> من أجل إزالة الجير الذي لا يمكن الوصول إليه حتى مع التنظيف الدقيق والتنظيف بالفرشاةنوصي هنا في مركز الامير بتنظيف الأسنان بشكل احترافي ودوري كل ستة أشهر.</p>
+    
+    </div>
+    <div class="card p-2 m-2" >
+    
+    <p>يوفر لك مركز الامير لطب الفم والاسنان خدمات تنظيف الأسنان ، والتلميع ، وتبييض الأسنان التي تحتاجها للحفاظ على صحة فمك.</p>
+    <p>هنا في مركز الامير نريد مساعدتك في الحفاظ على جمال ابتسامتك. من خلال خدمات التنظيف لدينا وكذلك خدمات التشخيص والعلاج لدينا ، يمكننا فعل ذلك.</p>
+    </div>
+    
+    
+    
+    </div>
+    
+    </div>
+    <!--end row Modal (text)-->
+    
+    
+    </div>
+    <!--end Modal body-->
+    <!--start Modal footer -->
+    <div class="modal-footer m-auto">
+    <button type="button" class="btn btn-danger btn-lg" data-bs-dismiss="modal">Close</button>
+    </div>
+    
     </div>
     </div>
     </div>
+    <!--end Modal -->
+    
+    
+    </div>
+    </div>
+    </div>
+    <!--end col -->
+    
     <div class="col">
     <div class="card text-center shadow">
     <img class="rounded-circle"  src="https://i0.wp.com/www.dryousefhawamdeh.com/wp-content/uploads/2021/06/TMJD-4.jpg?fit=768%2C998&ssl=1" class="card-img-top" alt="..." style="width:90%; height: 200px" >
     <div class="card-body">
     <h4 class="card-title">اضطرابات مفاصل الفك والوجهه</h4>
-    <p><a class="btn btn-warning" href="#">عرض المزيد &raquo; </a></p>
+    
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#staticBackdrop10">
+    فتح المقالة
+    </button>
+    
+    <!--start Modal -->
+    <div class="modal fade " style=""  id="staticBackdrop10" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-fullscreen">
+    <div class="modal-content">
+    <div class="modal-header d-flex justify-content-between">
+    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <h1 class="modal-title  m-auto" id="staticBackdropLabel">اضطرابات مفاصل الفك والوجهه</h1>
+    
+    </div>
+    <!--start Modal body -->
+    <div class="modal-body">
+    
+    <!--start row top Modal (images) -->
+    <div class="row" >
+    
+    <div class="col-6" >
+    <div class="card" >
+    <img class=""  src="https://i0.wp.com/www.dryousefhawamdeh.com/wp-content/uploads/2021/06/TMJD-4.jpg?fit=768%2C998&ssl=1"   class="card-img-top" alt="...">
+    
+    </div>
+    
+    
+    </div>
+    <div class="col-6" >
+    <div class="card" >
+    <img class=""  src="https://i0.wp.com/www.dryousefhawamdeh.com/wp-content/uploads/2021/06/TMJD-3.jpg?fit=1920%2C830&ssl=1"   class="card-img-top" alt="...">
+    
+    </div>
+    
+    
+    </div>
+    <div class="col" >
+    <div class="card" >
+    <img class=""  src="https://i0.wp.com/www.dryousefhawamdeh.com/wp-content/uploads/2021/06/TMJD-1.png?fit=2000%2C2000&ssl=1"    class="card-img-top" alt="...">
+    
+    </div>
+    
+    
+    </div>
+    
+    </div>
+    <!--end row Modal (images)-->
+    <!--start row Modal(text) -->
+    <div class="row" >
+    
+    <div class="col-12" >
+    <div class="card p-2 m-2" >
+    <p>أكثر الأعراض شيوعاً لاضطرابات المفصل الصدغي الفكي هو الألم في مفصل الفك ، في أحد الجانبين أو كلاهما ، أو في المنطقة المحيطة به.</p>
+    </div>
+    <div class="card p-2 m-2" >
+    
+    <p>تتضمن هذه العلامات والأعراض ما يلي:
+    ⁃ وجع في المنطقة المحاطة للأذن.
+    ⁃ تصلب الفك أيضاً شائع.
+    ⁃ إغلاق مفصل الفك أو تقييد حركته ، مما يجعل من المستحيل فتح الفم أو إغلاقه.
+    ⁃ وجع أو صداع في الجبهة أو الأذنين أو الكتفين أو الظهر.
+    ⁃ ألم منتشر في الشفة أو الفك أو الرقبة.
+    ⁃ صعوبة في المضغ أو الأكل أو الاستماع أو التنفس.
+    ⁃ أثناء فتح الفم ، هناك نقر مؤلم أو صوت فرقعة.
+    ⁃ عضة متغيرة أو مؤلمة أو غير متساويه.</p>
+    </div>
+    <div class="card p-2 m-2" >
+    <p>غالبًا ما يصاب مرضى المفصل الفكي الصدغي بأكثر من واحد من الأعراض المذكورة أعلاه. ومع ذلك ، يمكن أن يكون تشخيص مرض المفصل الفكي الصدغي مشكلة لأن هذه الأعراض غالبًا ما تكون طبيعية في مجموعة متنوعة من الاضطرابات الأخرى ، مثل التجاويف والخراجات في الفم والتهابات الجيوب أو الأذن</p>
+    
+    </div>
+    
+    
+    
+    </div>
+    
+    </div>
+    <!--end row Modal (text)-->
+    
+    
+    </div>
+    <!--end Modal body-->
+    <!--start Modal footer -->
+    <div class="modal-footer m-auto">
+    <button type="button" class="btn btn-danger btn-lg" data-bs-dismiss="modal">Close</button>
+    </div>
+    
     </div>
     </div>
     </div>
+    <!--end Modal -->
+    
+    
+    </div>
+    </div>
+    </div>
+    <!--end col -->
+    <!--
     <div class="col">
     <div class="card text-center">
     <img class="rounded-circle"  src="https://i0.wp.com/www.dryousefhawamdeh.com/wp-content/uploads/2021/06/botox-3-Copy.jpg?fit=900%2C600&ssl=1" class="card-img-top" alt="...">
     <div class="card-body">
     <h4 class="card-title">البوتوكس</h4>
-    <p><a class="btn btn-warning" href="#">عرض المزيد &raquo; </a></p>
+    <!-- Button trigger modal 
+    <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#staticBackdrop11">
+    فتح المقالة
+    </button>
+    
+    <!--start Modal 
+    <div class="modal fade " style=""  id="staticBackdrop11" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-fullscreen">
+    <div class="modal-content">
+    <div class="modal-header d-flex justify-content-between">
+    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <h1 class="modal-title  fs-5" id="staticBackdropLabel">البوتوكس</h1>
+    
+    </div>
+    <!--start Modal body 
+    <div class="modal-body">
+    
+    <!--start row top Modal (images) 
+    <div class="row" >
+    
+    <div class="col-6" >
+    <div class="card" >
+    <img class=""  src="https://i0.wp.com/www.dryousefhawamdeh.com/wp-content/uploads/2021/06/DENTAL-IMPLANTS-3.jpg?fit=2281%2C1284&ssl=1"  class="card-img-top" alt="...">
+    
+    </div>
+    
+    
+    </div>
+    <div class="col-6" >
+    <div class="card" >
+    <img class=""  src="https://i0.wp.com/www.dryousefhawamdeh.com/wp-content/uploads/2021/06/DENTAL-IMPLANTS-4.jpg?fit=1300%2C890&ssl=1"  class="card-img-top" alt="...">
+    
+    </div>
+    
+    
+    </div>
+    <div class="col" >
+    <div class="card" >
+    <img class=""  src="https://i0.wp.com/www.dryousefhawamdeh.com/wp-content/uploads/2021/06/DENTAL-IMPLANTS-1.jpg?fit=1000%2C800&ssl=1"   class="card-img-top" alt="...">
+    
+    </div>
+    
+    
+    </div>
+    
+    </div>
+    <!--end row Modal (images)-->
+    <!--start row Modal(text)
+    <div class="row" >
+    
+    <div class="col-12" >
+    <div class="card p-2 m-2" >
+    <p class="" >تعتبر زراعة الأسنان الآن العلاج المفضل لاستبدال الأسنان على أطقم الأسنان الجزئية والجسور الثابتة. العلاجات التقليدية إما ترتكز على لثتك ، كما هو الحال مع أطقم الأسنان القابلة للإزالة ، أو تعتمد على الأسنان المجاورة لتعمل كمثبتات للجسور الثابتة. يتم وضع زرعات الأسنان في عظام الفك ، مما يوفر خيار استبدال ناجح للغاية وطويل الأمد.</p>
+    
+    </div>
+    <div class="card p-2 m-2" >
+    <p>فقدان الأسنان وزراعتها.
+    
+    يتوفر في طب الأسنان الآن بدائل للطرق التقليدية لاستبدال الأسنان: أطقم الأسنان والجسور الثابتة ، والتي ترتبط بمضاعفات متزايدة بمرور الوقت.
+    
+    تسبب أطقم الأسنان المتحركة فقدان العظام مما يؤثر على بنية الوجه ويمكن أن يؤدي إلى تغيير ملاءمة طقم الأسنان للفك. قد تصدر أطقم الأسنان المتحركة أصوات نقر محرجة عند تناول الطعام أو التحدث. يتم وضع الجسور الثابتة عن طريق طحن الأسنان المجاورة المتبقية ، والمعروفة أيضًا باسم الدعامات ، مما يجعل هذه الأسنان السليمة أكثر عرضة للتلف. على الرغم من المضاعفات طويلة المدى ، لا تزال هذه العلاجات آمنة وقابلة للتطبيق</p>
+    </div>
+    <div class="card p-2 m-2" >
+    <p>تشير الأبحاث إلى أن زراعة الأسنان تؤدي إلى نتائج أفضل على المدى الطويل لاستبدال الأسنان. يتم وضع زرعات التيتانيوم جراحيًا في عظم الفك ، حيث تندمج الزرعة مع العظم الطبيعي الموجود في عملية تسمى الاندماج العظمي. لا تتحرك الزرعات أو تصدر ضوضاء محرجة ويصعب تمييزها عن أسنانك الطبيعية. نظرًا لأنها تعكس بنية الأسنان والجذور ، فإن الزرعات توفر تحفيزًا لعظم الفك ، مما يمنع فقدان العظام.
+    تساهم هذه العوامل في نجاح زراعة الأسنان على المدى الطويل وصحة الفم العامة اللاحقة</p>
+    </div>
+    
+    
+    
+    </div>
+    
+    </div>
+    <!--end row Modal (text)
+    
+    
+    </div>
+    <!--end Modal body-->
+    <!--start Modal footer 
+    <div class="modal-footer m-auto">
+    <button type="button" class="btn btn-danger btn-lg" data-bs-dismiss="modal">Close</button>
+    </div>
+    
     </div>
     </div>
     </div>
+    <!--end Modal 
+    
+    </div>
+    </div>
+    </div>
+    <!--end col -->
+    
     <div class="col">
     <div class="card text-center">
     <img class="rounded-circle"  src="https://veskedent.com/wp-content/uploads/2020/04/ortodonti-nedir.jpg" class="card-img-top" alt="...">
     <div class="card-body">
     <h4 class="card-title">تقويم الاسنان</h4>
-    <p><a class="btn btn-warning" href="#">عرض المزيد &raquo; </a></p>
+    
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#staticBackdrop12">
+    فتح المقالة
+    </button>
+    
+    <!--start Modal -->
+    <div class="modal fade " style=""  id="staticBackdrop12" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-fullscreen">
+    <div class="modal-content">
+    <div class="modal-header d-flex justify-content-between">
+    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <h1 class="modal-title  m-auto" id="staticBackdropLabel">تقويم الاسنان</h1>
+    
+    </div>
+    <!--start Modal body -->
+    <div class="modal-body">
+    
+    <!--start row top Modal (images) -->
+    <div class="row" >
+    
+    <div class="col-6" >
+    <div class="card" >
+    <img class=""  src="https://veskedent.com/wp-content/uploads/2020/04/ortodonti-nedir.jpg"  class="card-img-top" alt="...">
+    
+    </div>
+    
+    
+    </div>
+    <div class="col-6" >
+    <div class="card" >
+    <img class=""    class="card-img-top" alt="...">
+    
+    </div>
+    
+    
+    </div>
+    <div class="col" >
+    <div class="card" >
+    <img class=""  src="https://veskedent.com/wp-content/uploads/2020/04/antalya-ve-manavgat-ortodonti-1024x640.jpg"    class="card-img-top" alt="...">
+    
+    </div>
+    
+    
+    </div>
+    
+    </div>
+    <!--end row Modal (images)-->
+    <!--start row Modal(text) -->
+    <div class="row" >
+    
+    <div class="col-12" >
+    <div class="card p-2 m-2" >
+    <p>تقويمات الأسنان هي إجراءات علاجية أو تجميلية تتم في حالات معينة مثل تزاحم الأسنان أو اتساع حجم الفراغات بين الأسنان أو مشاكل سوء إطباق الأسنان أو بروز الأسنان الأمامية أو الخلفية.</p>
+    </div>
+    <div class="card p-2 m-2" >
+    <p>هنا في مركز الامير لطب الفم والاسنان نوفر كل أنواع تقويمات الأسنان، المصنوعة من خامات عالية الجودة، وتحت إشراف أكفأ الأطباء باستخدام أحدث التقنيات والأجهزة، لضمان أقصر فترة علاجية ممكنة.</p>
+    <p>حيث يساعد تقويم الأسنان على تحسين المظهر الخارجي للأسنان وشكل الابتسامة، والحصول على أسنان مستقيمة غير بارزة، وتصحيح تزاحمها، وتصحيح مشاكل إطباق الأسنان الأمامية والخلفية، والقضاء على اللدغة.
+    
+    • ويفضل تركيب تقويم الأسنان في سن مبكر للأطفال لتصحيح وتعديل عيوب الأسنان التي تحدث نتجية بعض العادات الخاطئة مثل مص الإبهام أو تناول الكثير من الحلوى والسكريات</p>
+    </div>
+    <div class="card p-2 m-2" >
+    
+    <p>أنواع تقويمات الأسنان:
+    
+    أفضل انواع تقويم الأسنان كثيرة منها :
+    
+    
+    التقويم الشفاف:
+    يتميز التقويم الشفاف بأنه غير مرئي
+    
+    فهو قالب شفاف من البلاستيك
+    
+    (مادة الأكريل) متحرك سهل الخلع والتركيب
+    
+    ويعتبر يناسب المراهقين والبالغين أكثر من الأطفال
+    
+    إذ تكون أسنان الأطفال في مرحلة النمو أكثر تعقيدً، ولا يصلح لجميع الحالات
+    
+    حيث يحتاج البعض إلى التقويم المعدني التقليديي لإعطاء نتائج أفضل، وتم تصميم التقويم الشفاف خصيصاً ليبدو شفافاً وغير مرئي لتحسين شكل ابتسامتك.
+    
+    التقويم الخزفي:
+    يشبه التقويم المعدني في الشكل والمقاس، ولكنه نفس لون الأسنان أو يكون شفاف حيث يتم استخدام مواد خزفية فيبدو أكثر اندماجاً مع الأسنان، وفي بعض الأحيان يُستخدم أسلاك بنفس لون الأسنان حتى لا تبدو مختلفة كثيراً عن الأسنان.
+    
+    التقويم المعدني (التقليدي):
+    من أنواع تقويم الأسنان التقويم المعدني يعتبر أكثر فاعلية في حالات التزاحم الشديد في الأسنان عن باقي التقويمات وأقلهم تكلفه، كما أنه يعطي الطبيب تحكم كامل في حركة الأسنان، ولا يمكن تحريكه إلا تحت إشراف الطبيب، وقد تكون مظهره المعدني الظاهر غير مرغوب للبعض</p>
+    </div>
+    
+    
+    
+    </div>
+    
+    </div>
+    <!--end row Modal (text)-->
+    
+    
+    </div>
+    <!--end Modal body-->
+    <!--start Modal footer -->
+    <div class="modal-footer m-auto">
+    <button type="button" class="btn btn-danger btn-lg" data-bs-dismiss="modal">Close</button>
+    </div>
+    
     </div>
     </div>
     </div>
+    <!--end Modal -->
+    
+    </div>
+    </div>
+    </div>
+    <!--end col -->
+    
     <div class="col">
     <div class="card text-center">
     <img class="rounded-circle"  src="https://veskedent.com/wp-content/uploads/2020/03/%C3%A7ocuk-di%C5%9F-hekimi.jpg" class="card-img-top" alt="...">
     <div class="card-body">
     <h4 class="card-title">طب اسنان الاطفال</h4>
-    <p><a class="btn btn-warning" href="#">عرض المزيد &raquo; </a></p>
+    
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#staticBackdrop13">
+    فتح المقالة
+    </button>
+    
+    <!--start Modal -->
+    <div class="modal fade " style=""  id="staticBackdrop13" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-fullscreen">
+    <div class="modal-content">
+    <div class="modal-header d-flex justify-content-between">
+    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <h1 class="modal-title  m-auto" id="staticBackdropLabel">طب اسنان الاطفال</h1>
+    
     </div>
+    <!--start Modal body -->
+    <div class="modal-body">
+    
+    <!--start row top Modal (images) -->
+    <div class="row" >
+    
+    <div class="col-6" >
+    <div class="card" >
+    <img class=""    class="card-img-top" alt="...">
+    
     </div>
+    
+    
     </div>
+    <div class="col-6" >
+    <div class="card" >
+    <img class=""    class="card-img-top" alt="...">
+    
+    </div>
+    
+    
+    </div>
+    <div class="col" >
+    <div class="card" >
+    <img class=""  src="https://veskedent.com/wp-content/uploads/2020/03/%C3%A7ocuk-di%C5%9F-hekimi.jpg"    class="card-img-top" alt="...">
+    
+    </div>
+    
     
     </div>
     
     </div>
+    <!--end row Modal (images)-->
+    <!--start row Modal(text) -->
+    <div class="row" >
+    
+    <div class="col-12" >
+    <div class="card p-2 m-2" >
+    <p>أطباء أسنان الأطفال هم قسم طب الأسنان الذي يتعامل مع علاج الأسنان اللبنية للأطفال الذين تتراوح أعمارهم بين 0-14 عامًا. الأسنان اللبنية هي الأسنان التي تبقى في أفواه الأطفال حتى يتمكنوا من العناية بأفواههم.
+    
+    إن أهم وظيفة للأسنان اللبنية هي توجيه بزوغ الأسنان الدائمة (الأسنان الرئيسية)، والتي تبدأ بالظهور في الفم اعتباراً من عمر 6 سنوات. ومع مرور الوقت، حيث أن الأسنان الدائمة تخرج من تحت الأسنان اللبنية، فإن جذور الأسنان تذوب أسنان الحليب وتهتز وتسقط مع مرور الوقت</p>
     </div>
+    <div class="card p-2 m-2" >
+    
+    <p>بسبب العادات الغذائية السيئة التي شهدها الأطفال في الآونة الأخيرة، لوحظ في الأسنان اللبنية تناول الأطعمة السكرية والحمضية وتسوس الأسنان والالتهابات وفقدان الأسنان اللبنية المبكرة، ونتيجة لذلك، لسوء الحظ، يضطر الأطفال إلى مقابلة أطباء أسنان الأطفال في مكان قريب جدًا. عمر مبكر. .</p>
+    
+    </div>
+    <div class="card p-2 m-2" >
+    </div>
+    
+    
+    
+    </div>
+    
+    </div>
+    <!--end row Modal (text)-->
+    
+    
+    </div>
+    <!--end Modal body-->
+    <!--start Modal footer -->
+    <div class="modal-footer m-auto">
+    <button type="button" class="btn btn-danger btn-lg" data-bs-dismiss="modal">Close</button>
+    </div>
+    
+    </div>
+    </div>
+    </div>
+    <!--end Modal -->
+    
+    </div>
+    </div>
+    </div>
+    <!--end col -->
+    </div>
+    
+    </div>
+    </div>
+    </p>
     
     
     <!--end services section-->
@@ -322,28 +1609,7 @@
     </ul>
     </div>
     
-    <!-- <div class="col-6 col-md-2 mb-3">
-    <h5>Section</h5>
-    <ul class="nav flex-column">
-    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-    </ul>
-    </div>
     
-    <div class="col-6 col-md-2 mb-3">
-    <h5>Section</h5>
-    <ul class="nav flex-column">
-    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-    </ul>
-    </div>
-    -->
     <div class="col-md-5 text-light offset-md-1 mb-3">
     <form>
     <h5 class="" >للخدمات البريدية</h5>
